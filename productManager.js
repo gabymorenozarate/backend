@@ -26,7 +26,7 @@ if (this.products.length===0 ) {
     this.products.push( {id: 1, ... newProduct} )
 
 }else { 
-    this.products.push( {id: this.products[this.product.length-1].id +1  , ... newProduct} )
+    this.products.push( {id: this.products[this.products.length-1].id +1  , ... newProduct} )
 }
 
 }
@@ -72,4 +72,4 @@ code: '0002',
 stock: 100
 })
 console.log('todos', productos.getProducts())
-console.log('por id', productos.getProductsById())
+console.log('por id', productos.getProductById(1))
